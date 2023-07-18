@@ -430,7 +430,8 @@ section{
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-    padding: 2.3rem;
+    /* padding: 2.3rem; */
+    transform: scale(1.1);
     box-shadow: 0 0 5px var(--red);
 }
 
@@ -481,7 +482,7 @@ section{
    color:var(--red);
 }
 
-.home-products .slide .fa-heart,
+/* .home-products .slide .fa-heart,
 .home-products .slide .fa-eye{
    position: absolute;
    top:1rem;
@@ -518,7 +519,7 @@ section{
 
 .home-products .slide:hover .fa-eye{
    left: 1rem;
-}
+} */
 
 .products-slider [class^="swiper-button-"]::after{
     font-size: 28px;
@@ -527,7 +528,7 @@ section{
 .home-products .swiper-button-prev {
     position: absolute;
     color: var(--white);
-    top: 90%;
+    top: 93%;
     left: 3;
     z-index: 10;
     background-color: var(--black);
@@ -538,7 +539,7 @@ section{
 .home-products .swiper-button-next {
     position: absolute;
     color: var(--white);
-    top: 90%;
+    top: 93%;
     right: 3;
     z-index: 10;
     background-color: var(--black);
@@ -638,10 +639,15 @@ section{
    line-height: 2;
 }  
 
+/* shop.php */
+.products {
+   max-width: 100%;
+}
+
 .products .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, 33rem);
-   gap:1.5rem;
+   grid-template-columns: repeat(auto-fit, 38rem);
+   gap:5rem;
    justify-content: center;
    align-items: flex-start;
 }
@@ -661,9 +667,10 @@ section{
    width: 100%;
    object-fit: contain;
    margin-bottom: 1rem;
+   transition: transform 0.3s ease-in-out;
 }
 
-.products .box-container .box .fa-heart,
+/* .products .box-container .box .fa-heart,
 .products .box-container .box .fa-eye{
    position: absolute;
    top:1rem;
@@ -700,6 +707,11 @@ section{
 
 .products .box-container .box:hover .fa-eye{
    left:1rem;
+} */
+
+.products .box-container .box:hover {
+   box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+   transform: scale(1.02);
 }
 
 .products .box-container .box .name{
