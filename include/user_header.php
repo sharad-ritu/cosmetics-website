@@ -58,7 +58,7 @@ if (isset($message)) {
                     <a href="user_register.php" class="option-btn">register</a>
                     <a href="user_login.php" class="option-btn">login</a>
                 </div>
-                <a href="components/user_logout.php" class="delete-btn" onclick="return confirm('logout from the website?');">logout</a>
+                <a href="include/user_logout.php" class="delete-btn" onclick="return confirm('logout from the website?');">logout</a>
             <?php
             } else {
             ?>
