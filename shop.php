@@ -26,7 +26,7 @@ include 'include/wishlist_cart.php';
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style1.css">
+   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -75,7 +75,7 @@ include 'include/wishlist_cart.php';
 
 <?php include 'include/user_footer.php'; ?>
 
-<script src="js/script1.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
