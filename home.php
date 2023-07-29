@@ -62,42 +62,42 @@ include 'include/wishlist_cart.php';
 
         <div class="swiper category-slider">
             <div class="swiper-wrapper">
-                <a href="category.php?category=laptop" class="swiper-slide slide">
+                <a href="category.php?category=skin" class="swiper-slide slide">
                     <img src="images/skincare.png" alt="">
                     <h3>Skin Care</h3>
                 </a>
 
-                <a href="category.php?category=tv" class="swiper-slide slide">
+                <a href="category.php?category=lipstick" class="swiper-slide slide">
                     <img src="images/lipsticks.png" alt="">
                     <h3>Lipstick</h3>
                 </a>
 
-                <a href="category.php?category=camera" class="swiper-slide slide">
+                <a href="category.php?category=perfume" class="swiper-slide slide">
                     <img src="images/perfume.png" alt="">
                     <h3>Perfume</h3>
                 </a>
 
-                <a href="category.php?category=mouse" class="swiper-slide slide">
+                <a href="category.php?category=eye" class="swiper-slide slide">
                     <img src="images/eye-shadow.png" alt="">
                     <h3>Eye Shadow</h3>
                 </a>
 
-                <a href="category.php?category=fridge" class="swiper-slide slide">
+                <a href="category.php?category=mascara" class="swiper-slide slide">
                     <img src="images/mascara.png" alt="">
                     <h3>Mascara</h3>
                 </a>
 
-                <a href="category.php?category=washing" class="swiper-slide slide">
+                <a href="category.php?category=powder" class="swiper-slide slide">
                     <img src="images/powder.png" alt="">
                     <h3>Foundation</h3>
                 </a>
 
-                <a href="category.php?category=smartphone" class="swiper-slide slide">
+                <a href="category.php?category=soap" class="swiper-slide slide">
                     <img src="images/soap.png" alt="">
                     <h3>Soap</h3>
                 </a>
 
-                <a href="category.php?category=watch" class="swiper-slide slide">
+                <a href="category.php?category=hair" class="swiper-slide slide">
                     <img src="images/woman.png" alt="">
                     <h3>Hair Styling</h3>
                 </a>
