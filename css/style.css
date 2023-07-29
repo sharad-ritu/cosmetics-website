@@ -748,6 +748,7 @@ section{
    margin-right: auto;
 }
 
+/* login and signup */
 .form-container{
    max-width: 100%;
    background-image: url('../images/main-background2');
@@ -1076,6 +1077,7 @@ section{
    color:var(--light-color);
 }
 
+/* order php */
 .orders .box-container{
    display: flex;
    flex-wrap: wrap;
