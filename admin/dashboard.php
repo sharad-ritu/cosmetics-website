@@ -35,11 +35,6 @@ if(!isset($admin_id)){
 
    <div class="box-container">
 
-      <div class="box">
-         <h3>welcome!</h3>
-         <p><?= $fetch_profile['name']; ?></p>
-         <a href="update_profile.php" class="btn">update profile</a>
-      </div>
 
       <div class="box">
          <?php
@@ -52,25 +47,25 @@ if(!isset($admin_id)){
                }
             }
          ?>
-         <h3><span>$</span><?= $total_pendings; ?><span>/-</span></h3>
-         <p>total pendings</p>
-         <a href="placed_orders.php" class="btn">see orders</a>
+        <?php
+            $select_completed = $conn->prepare("SELECT * FROM `orders` WHERE payment_status = 'completed' ");
+            $select_completed->execute();
+            $number_of_completed = $select_completed->rowCount()
+         ?>
+         <h3><span><?= $number_of_completed; ?></h3>
+         <p>payment completed</p>
+         <a href="placed_orders.php" class="btn">see paid orders</a>
       </div>
 
       <div class="box">
-         <?php
-            $total_completes = 0;
-            $select_completes = $conn->prepare("SELECT * FROM `orders` WHERE payment_status = ?");
-            $select_completes->execute(['completed']);
-            if($select_completes->rowCount() > 0){
-               while($fetch_completes = $select_completes->fetch(PDO::FETCH_ASSOC)){
-                  $total_completes += $fetch_completes['total_price'];
-               }
-            }
+        <?php
+            $select_pendings = $conn->prepare("SELECT * FROM `orders` WHERE payment_status = 'pending' ");
+            $select_pendings->execute();
+            $number_of_pendings = $select_pendings->rowCount()
          ?>
-         <h3><span>$</span><?= $total_completes; ?><span>/-</span></h3>
-         <p>completed orders</p>
-         <a href="placed_orders.php" class="btn">see orders</a>
+         <h3><span><?= $number_of_pendings; ?></h3>
+         <p>payment remaining</p>
+         <a href="placed_orders.php" class="btn">see unpaid orders</a>
       </div>
 
       <div class="box">
@@ -81,7 +76,7 @@ if(!isset($admin_id)){
          ?>
          <h3><?= $number_of_orders; ?></h3>
          <p>orders placed</p>
-         <a href="placed_orders.php" class="btn">see orders</a>
+         <a href="placed_orders.php" class="btn">see all orders</a>
       </div>
 
       <div class="box">
@@ -125,7 +120,7 @@ if(!isset($admin_id)){
          ?>
          <h3><?= $number_of_messages; ?></h3>
          <p>new messages</p>
-         <a href="messagess.php" class="btn">see messages</a>
+         <a href="messages.php" class="btn">see messages</a>
       </div>
 
    </div>
