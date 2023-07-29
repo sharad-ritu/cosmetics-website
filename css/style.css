@@ -868,6 +868,14 @@ section{
    color:var(--black);
 }
 
+/* contact php */
+.contact{
+   max-width: 100%;
+   background-image: url('../images/main-background2');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
 .contact form{
    padding:2rem;
    text-align: center;
