@@ -54,7 +54,7 @@ if(!isset($admin_id)){
          ?>
          <h3><span><?= $number_of_completed; ?></h3>
          <p>payment completed</p>
-         <a href="placed_orders.php" class="btn">see paid orders</a>
+         <a href="paid_orders.php" class="btn">see paid orders</a>
       </div>
 
       <div class="box">
@@ -65,7 +65,7 @@ if(!isset($admin_id)){
          ?>
          <h3><span><?= $number_of_pendings; ?></h3>
          <p>payment remaining</p>
-         <a href="placed_orders.php" class="btn">see unpaid orders</a>
+         <a href="unpaid_orders.php" class="btn">see unpaid orders</a>
       </div>
 
       <div class="box">
