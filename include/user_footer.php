@@ -4,18 +4,18 @@
 
         <div class="box">
             <h3>quick links</h3>
-            <a href="home.php"><i class="fa-solid fa-house"></i>home</a>
-            <a href="home.php"><i class="fa-solid fa-circle-dot"></i>about</a>
-            <a href="home.php"><i class="fa-solid fa-bag-shopping"></i>shop</a>
-            <a href="home.php"><i class="fa-solid fa-address-book"></i>contact</a>
+            <a href="home.php"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="home.php"><i class="fa-solid fa-circle-dot"></i>About</a>
+            <a href="home.php"><i class="fa-solid fa-bag-shopping"></i>Shop</a>
+            <a href="home.php"><i class="fa-solid fa-address-book"></i>Contact</a>
         </div>
 
         <div class="box">
             <h3>extra links</h3>
-            <a href="user_login.php"><i class="fa-solid fa-right-to-bracket"></i>login</a>
-            <a href="user_register.php"><i class="fa-solid fa-right-to-bracket"></i>register</a>
-            <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i>cart</a>
-            <a href="orders.php"><i class="fa-solid fa-box"></i>orders</a>
+            <a href="user_login.php"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+            <a href="user_register.php"><i class="fa-solid fa-right-to-bracket"></i>Register</a>
+            <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+            <a href="orders.php"><i class="fa-solid fa-box"></i>Orders</a>
         </div>
 
         <div class="box">
@@ -28,9 +28,9 @@
 
         <div class="box">
             <h3>follow us</h3>
-            <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
-            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
-            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+            <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+            <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
             <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
         </div>
 

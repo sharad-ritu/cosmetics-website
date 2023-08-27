@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 
 :root{
-   /* --main-color:#2980b9; */
+   --main-color1:#2980b9;
    --main-color:#FF55BB;
    --second: #FFD3A3;
    --third: #FCFFB2;
@@ -13,8 +13,9 @@
    --white:#fff;
    --light-color:#666;
    --light-bg:#eee;
-   --border:.2rem solid var(--black);
+   /* --border:.2rem solid var(--black); */
    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --border: 1.5px solid var(--main-color);
 }
 
 *{
@@ -49,7 +50,7 @@ html{
 }
 
 body{
-   background-color: var(--light-bg);
+   background-color: var(--fifth);
 }
 
 section{
@@ -84,7 +85,8 @@ section{
 .btn:hover,
 .delete-btn:hover,
 .option-btn:hover{
-   background-color: var(--black);
+   background-color: var(--fourth);
+   color: var(--black);
 }
 
 .btn{
@@ -92,7 +94,7 @@ section{
 }
 
 .option-btn{
-   background-color: var(--orange);
+   background-color: var(--main-color);
 }
 
 .delete-btn{
@@ -107,13 +109,14 @@ section{
 .message{
    position: sticky;
    top:0;
-   max-width: 1200px;
+   /* max-width: 1200px; */
    margin:0 auto;
-   background-color: var(--light-bg);
-   padding:2rem;
+   background-color: var(--fourth);
+   padding:1rem;
+   border-bottom: 1px solid black;
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-around;
    gap:1.5rem;
    z-index: 1100;
 }
@@ -161,7 +164,7 @@ section{
 .header{
    position: sticky;
    top:0; left:0; right:0;
-   background-color: var(--white);
+   background-color: var(--fifth);
    box-shadow: var(--box-shadow);
    z-index: 1000;
 }
@@ -186,22 +189,24 @@ section{
    margin:0 1.5rem;
    font-size: 2rem;
    color:var(--black);
-   border: 2px solid var(--black);
+   border: 1.6px solid var(--main-color);
    /* border-top: 2px solid var(--black);
    border-right: 2px solid var(--black); */
    padding: .5rem .8rem;
    border-top-right-radius: .7rem;
    border-bottom-left-radius: .7rem;
+   transition: .3s ease;
 }
 
 .header .flex .navbar a:hover{
-   color:var(--main-color);
+   /* color:var(--main-color); */
    /* text-decoration: underline; */
    /* border-bottom: 2px solid var(--black);
    border-left: 2px solid var(--black); */
    /* border-bottom-left-radius: .7rem; */
-   background-color: var(--orange);
+   background-color: var(--main-color);
    color: var(--white);
+   border-color: var(--main);
    /* box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); */
 }
 
@@ -227,7 +232,7 @@ section{
    background-color: var(--white);
    border-radius: .5rem;
    box-shadow: var(--box-shadow);
-   border:var(--border);
+   border: 1.5px solid var(--main-color);
    padding:2rem;
    width: 30rem;
    padding-top: 1.2rem;
@@ -378,23 +383,23 @@ section{
 .category .slide{
    margin-bottom: 6rem;
    box-shadow: var(--box-shadow);
-   border:var(--border);
+   /* border: 1px solid var(--fourth); */
    text-align: center;
    padding:2rem;
-   background: var(--white);
+   background: var(--fourth);
    border-radius: .5rem;
 }
 
 .category .slide:hover{
-   background-color: var(--black);
+   background-color: var(--third);
 }
 
-.category .slide:hover img{
+/* .category .slide:hover img{
    filter:invert();
-}
+} */
 
 .category .slide:hover h3{
-   color:var(--white);
+   color:var(--main-color);
 }
 
 .category .slide img{
@@ -417,22 +422,22 @@ section{
 
 .swiper-button-prev {
     position: absolute;
-    color: var(--white);
+    color: var(--black);
     top: 88%;
     left: 3;
     z-index: 10;
-    background-color: var(--red);
+    background-color: var(--fourth);
     padding: 2.1rem;
     border-radius: 50%;
 }
 
 .swiper-button-next {
     position: absolute;
-    color: var(--white);
+    color: var(--black);
     top: 88%;
     right: 3;
     z-index: 10;
-    background-color: var(--red);
+    background-color: var(--fourth);
     padding: 2.1rem;
     border-radius: 50%;
 }
@@ -449,7 +454,7 @@ section{
     position: relative;
     padding:2rem;
     border-radius: .5rem;
-    border:var(--border);
+    border: 1.5px solid var(--main-color);
     background-color: var(--white);
     box-shadow: var(--box-shadow);
     margin-bottom: 7rem;
@@ -457,10 +462,10 @@ section{
     user-select: none;
 }
 
-.home-products .slide:hover{
+/* .home-products .slide:hover{
    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
    
-}
+} */
 
 .home-products .slide img{
    width: 100%;
@@ -484,7 +489,7 @@ section{
 .home-products .slide .flex .qty{
    width: 7rem;
    padding:1rem;
-   border:var(--border);
+   border: 1.5px solid var(--main-color);
    font-size: 1.8rem;
    color:var(--black);
    border-radius: .5rem;
@@ -545,7 +550,7 @@ section{
     top: 93%;
     left: 3;
     z-index: 10;
-    background-color: var(--black);
+    background-color: var(--main-color);
     padding: 2.1rem;
     border-radius: 50%;
 }
@@ -556,7 +561,7 @@ section{
     top: 93%;
     right: 3;
     z-index: 10;
-    background-color: var(--black);
+    background-color: var(--main-color);
     padding: 2.1rem;
     border-radius: 50%;
 }
@@ -564,7 +569,7 @@ section{
 .quick-view form{
    padding:2rem;
    border-radius: .5rem;
-   border:var(--border);
+   border: 1.5px solid var(--main-color);
    background-color: var(--white);
    box-shadow: var(--box-shadow);
    margin-top: 1rem;
@@ -600,7 +605,8 @@ section{
    width: 10rem;
    object-fit: contain;
    padding:.5rem;
-   border:var(--border);
+   border: 1.5px solid var(--main-color);
+   border-radius: .5rem;
    cursor: pointer;
    transition: .2s linear;
 }
@@ -636,7 +642,7 @@ section{
 .quick-view form .row .flex .qty{
    width: 7rem;
    padding:1rem;
-   border:var(--border);
+   border:1.5px solid var(--main-color);
    font-size: 1.8rem;
    color:var(--black);
    border-radius: .5rem;
@@ -671,7 +677,7 @@ section{
    background-color: var(--white);
    box-shadow: var(--box-shadow);
    border-radius: .5rem;
-   border:var(--border);
+   border:1.5px solid var(--main-color);
    padding:2rem;
    overflow: hidden;
 }
@@ -742,7 +748,7 @@ section{
 .products .box-container .box .flex .qty{
    width: 7rem;
    padding:1rem;
-   border:var(--border);
+   border:1.5px solid var(--main-color);
    font-size: 1.8rem;
    color:var(--black);
    border-radius: .5rem;
@@ -765,7 +771,7 @@ section{
    background-color: var(--white);
    padding:2rem;
    border-radius: .5rem;
-   border:var(--border);
+   border: 1.5px solid var(--main-color);
    box-shadow: var(--box-shadow);
    text-align: center;
    margin:0 auto;
@@ -775,7 +781,7 @@ section{
 .form-container form h3{
    font-size: 2.5rem;
    text-transform: uppercase;
-   color:var(--orange);
+   color:var(--black);
 }
 
 .form-container form p{
@@ -786,7 +792,7 @@ section{
 
 .form-container form .box{
    margin:1rem 0;
-   background-color: var(--light-bg);
+   background-color: var(--fifth);
    padding:1.4rem;
    font-size: 1.8rem;
    color:var(--black);  
@@ -836,7 +842,7 @@ section{
    background-color: var(--white);
    box-shadow: var(--box-shadow);
    border-radius: .5rem;
-   border:var(--border);
+   border:1.5px solid var(--main-color);
    margin-bottom: 5rem;
    user-select: none;
 }
@@ -888,7 +894,7 @@ section{
    background-color: var(--white);
    box-shadow: var(--box-shadow);
    border-radius: .5rem;
-   border:var(--border);
+   border: 1.5px solid var(--main-color);
    max-width: 50rem;
    margin:0 auto;
 }
@@ -903,7 +909,7 @@ section{
 .contact form .box{
    margin:1rem 0;
    width: 100%;
-   background-color: var(--light-bg);
+   background-color: var(--fifth);
    padding:1.4rem;
    font-size: 1.8rem;
    color:var(--black);
@@ -922,7 +928,7 @@ section{
 
 .search-form form input{
    width: 100%;
-   border:var(--border);
+   border:1.5px solid var(--main-color);
    border-radius: .5rem;
    background-color: var(--white);
    box-shadow: var(--box-shadow);
@@ -944,7 +950,8 @@ section{
 }
 
 .search-form form button:hover{
-   background-color: var(--black);
+   background-color: var(--fourth);
+   color: var(--black);
 }
 
 .wishlist-total{
@@ -952,7 +959,7 @@ section{
    margin:0 auto;
    margin-top: 3rem;
    background-color: var(--white);
-   border:var(--border);
+   border: 1.5px solid var(--main-color);
    border-radius: .5rem;;
    padding:2rem;
    text-align: center;
@@ -971,7 +978,7 @@ section{
 .shopping-cart .fa-check{
    height: 4.5rem;
    border-radius: .5rem;
-   background-color: var(--orange);
+   background-color: var(--main-color1);
    width: 5rem;
    font-size: 2rem;
    color:var(--white);
@@ -997,7 +1004,7 @@ section{
    margin:0 auto;
    margin-top: 3rem;
    background-color: var(--white);
-   border:var(--border);
+   border: 1.5px solid var(--main-color);
    border-radius: .5rem;;
    padding:2rem;
    text-align: center;
@@ -1047,7 +1054,7 @@ section{
 
 .checkout-orders form{
    padding:2rem;
-   border:var(--border);
+   border: 1.5px solid var(--main-color);
    background-color: var(--white);
    box-shadow: var(--box-shadow);
    border-radius: .5rem;
@@ -1055,7 +1062,7 @@ section{
 
 .checkout-orders form h3{
    border-radius: .5rem;
-   background-color: var(--black);
+   background-color: var(--main-color1);
    color:var(--white);
    padding:1.5rem 1rem;
    text-align: center;
@@ -1083,12 +1090,13 @@ section{
    color:var(--black);
    padding:1.2rem 1.4rem;
    margin:1rem 0;
-   background-color: var(--light-bg);
+   background-color: var(--fifth);
 }
 
 .checkout-orders form .flex .inputBox span{
    font-size: 1.8rem;
    color:var(--light-color);
+   text-transform: capitalize;
 }
 
 /* order php */
@@ -1102,7 +1110,7 @@ section{
 .orders .box-container .box{
    padding:1rem 2rem;
    flex:1 1 40rem;
-   border:var(--border);
+   border: 1.5px solid var(--main-color);
    background-color: var(--white);
    box-shadow: var(--box-shadow);
    border-radius: .5rem;
@@ -1116,11 +1124,12 @@ section{
 }
 
 .orders .box-container .box p span{
-   color:var(--main-color);
+   color:var(--main-color1);
 }
 
 .footer{
-   background-color: var(--white);
+   background-color: var(--fifth);
+   border-top: var(--border);
    /* padding-bottom: 7rem; */
 }
 
@@ -1136,6 +1145,7 @@ section{
    color:var(--black);
    margin-bottom: 2rem;
    text-transform: capitalize;
+   text-decoration: underline;
 }
 
 .footer .grid .box a{
@@ -1152,7 +1162,7 @@ section{
 }
 
 .footer .grid .box a:hover{
-   color:var(--main-color);
+   color: var(--main-color);
 }
 
 .footer .grid .box a:hover i{
@@ -1161,7 +1171,7 @@ section{
 
 .footer .credit{
    text-align: center;
-   padding: 2.5rem 2rem;
+   padding: 1.5rem 2rem;
    border-top: var(--border);
    font-size: 2rem;
    color:var(--black);

@@ -26,7 +26,7 @@ if(isset($_SESSION['user_id'])){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style1.css">
 
 </head>
 <body>
@@ -42,7 +42,7 @@ if(isset($_SESSION['user_id'])){
       </div>
 
       <div class="content">
-         <h3>why choose us?</h3>
+         <h3>Why choose us?</h3>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis minus et similique doloribus? Harum molestias tenetur eaque illum quas? Obcaecati nulla in itaque modi magnam ipsa molestiae ullam consequuntur.</p>
          <a href="contact.php" class="btn">contact us</a>
       </div>
@@ -69,7 +69,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Sharad Shrestha</h3>
       </div>
 
       <div class="swiper-slide slide">
@@ -82,7 +82,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Aashish Lamichhane</h3>
       </div>
 
       <div class="swiper-slide slide">
@@ -95,7 +95,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Sugam Rimal</h3>
       </div>
 
       <div class="swiper-slide slide">
@@ -108,7 +108,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Josh Cena</h3>
       </div>
 
       <div class="swiper-slide slide">
@@ -121,7 +121,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Baucha Haha</h3>
       </div>
 
       <div class="swiper-slide slide">
@@ -134,7 +134,7 @@ if(isset($_SESSION['user_id'])){
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Noob Master</h3>
       </div>
 
    </div>
