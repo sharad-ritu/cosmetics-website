@@ -94,7 +94,7 @@ if(isset($_GET['delete'])){
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-   <link rel="stylesheet" href="../css/admin_style.css">
+   <link rel="stylesheet" href="../css/admin_style1.css">
 
 </head>
 <body>
@@ -156,7 +156,7 @@ if(isset($_GET['delete'])){
       <div class="price">$<span><?= $fetch_products['price']; ?></span>/-</div>
       <div class="details"><span><?= $fetch_products['details']; ?></span></div>
       <div class="flex-btn">
-         <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="option-btn">update</a>
+         <a href="update_product.php?update=<?= $fetch_products['id']; ?>" class="btn">update</a>
          <a href="products.php?delete=<?= $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
       </div>
    </div>

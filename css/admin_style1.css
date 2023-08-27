@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 
 :root{
-   --main-color:#2980b9;
+   --main-color1:#2980b9;
+   --main-color:#FF55BB;
+   --second: #FFD3A3;
+   --third: #FCFFB2;
+   --fourth: #B6EAFA;
+   --fifth: #FDF4F5;
    --orange:#f39c12;
    --red:#e74c3c;
    --black:#444;
    --white:#fff;
    --light-color:#777;
    --light-bg:#f5f5f5;
-   --border:.2rem solid var(--black);
-   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --border: 1.5px solid var(--main-color);
+   --box-shadow:0 1rem 1rem rgba(0,0,0,.1);
 }
 
 *{
@@ -44,7 +49,7 @@ html{
 }
 
 body{
-   background-color: var(--light-bg);
+   background-color: var(--fifth);
    /* padding-bottom: 10rem; */
 }
 
@@ -80,7 +85,8 @@ section{
 .btn:hover,
 .delete-btn:hover,
 .option-btn:hover{
-   background-color: var(--black);
+   background-color: var(--fourth);
+   color: var(--black);
 }
 
 .btn{
@@ -88,7 +94,7 @@ section{
 }
 
 .option-btn{
-   background-color: var(--orange);
+   background-color: var(--main-color1);
 }
 
 .delete-btn{
@@ -103,13 +109,13 @@ section{
 .message{
    position: sticky;
    top:0;
-   max-width: 1200px;
+   /* max-width: 1200px; */
    margin:0 auto;
-   background-color: var(--light-bg);
+   background-color: var(--fourth);
    padding:2rem;
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-around;
    gap:1.5rem;
    z-index: 1100;
 }
@@ -186,7 +192,7 @@ section{
    width: 100%;
    margin:1rem 0;
    border-radius: .5rem;
-   background-color: var(--light-bg);
+   background-color: var(--fifth);
    padding:1.4rem;
    font-size: 1.8rem;
    color:var(--black);
@@ -205,6 +211,7 @@ section{
    align-items: center;
    justify-content: space-between;
    position: relative;
+   text-transform: capitalize;
 }
 
 .header .flex .logo{
@@ -284,13 +291,18 @@ section{
    background-color: var(--white);
 }
 
+.dashboard .box-container .box:hover{
+   transform: scale(1.06);
+   border: 2px solid var(--main-color);
+}
+
 .dashboard .box-container .box h3{
    font-size: 2.7rem;
    color:var(--black);
 }
 
 .dashboard .box-container .box h3 span{
-   font-size: 2rem;
+   font-size: 3rem;
 }
 
 .dashboard .box-container .box p{
@@ -300,6 +312,7 @@ section{
    font-size: 1.7rem;
    color:var(--light-color);
    margin:1rem 0;
+   text-transform: capitalize;
 }
 
 .add-products form{
@@ -325,11 +338,12 @@ section{
 .add-products form span{
    font-size:1.7rem;
    color:var(--light-color);
+   text-transform: capitalize;
 }
 
 .add-products form .box{
    font-size: 1.8rem;
-   background-color: var(--light-bg);
+   background-color: var(--fifth);
    border-radius: .5rem;
    padding:1.4rem;
    width: 100%;
@@ -428,7 +442,7 @@ section{
    padding:1.4rem;
    font-size: 1.8rem;
    color:var(--black);
-   background-color: var(--light-bg);
+   background-color: var(--fifth);
    margin:1rem 0;
 }
 
@@ -444,7 +458,7 @@ section{
 
 .orders .box-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, 33rem);
+   grid-template-columns: repeat(auto-fit, 36rem);
    gap:1.5rem;
    align-items: flex-start;
    justify-content: center;
@@ -467,7 +481,7 @@ section{
 }
 
 .orders .box-container .box p span{
-   color:var(--main-color);
+   color:var(--main-color1);
 }
 
 .orders .box-container .select{
@@ -506,7 +520,7 @@ section{
 }
 
 .accounts .box-container .box p span{
-   color:var(--main-color);
+   color:var(--main-color1);
 }
 
 .contacts .box-container{
@@ -534,7 +548,7 @@ section{
 }
 
 .contacts .box-container .box p span{
-   color:var(--main-color);
+   color:var(--main-color1);
 }
 
 

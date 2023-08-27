@@ -38,7 +38,7 @@ if(isset($_GET['delete'])){
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-   <link rel="stylesheet" href="../css/admin_style.css">
+   <link rel="stylesheet" href="../css/admin_style1.css">
 
 </head>
 <body>
@@ -73,7 +73,7 @@ if(isset($_GET['delete'])){
             <option value="completed">completed</option>
          </select>
         <div class="flex-btn">
-         <input type="submit" value="update" class="option-btn" name="update_payment">
+         <input type="submit" value="update" class="btn" name="update_payment">
          <a href="placed_orders.php?delete=<?= $fetch_orders['id']; ?>" class="delete-btn" onclick="return confirm('delete this order?');">delete</a>
         </div>
       </form>

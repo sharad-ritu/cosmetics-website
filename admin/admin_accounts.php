@@ -29,7 +29,7 @@ if(isset($_GET['delete'])){
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-   <link rel="stylesheet" href="../css/admin_style.css">
+   <link rel="stylesheet" href="../css/admin_style1.css">
 
 </head>
 <body>
@@ -44,7 +44,7 @@ if(isset($_GET['delete'])){
 
    <div class="box">
       <p>add new admin</p>
-      <a href="admin_register.php" class="option-btn">register admin</a>
+      <a href="admin_register.php" class="btn">register admin</a>
    </div>
 
    <?php
@@ -60,7 +60,7 @@ if(isset($_GET['delete'])){
          <a href="admin_accounts.php?delete=<?= $fetch_accounts['id']; ?>" onclick="return confirm('delete this account?')" class="delete-btn">delete</a>
          <?php
             if($fetch_accounts['id'] == $admin_id){
-               echo '<a href="update_profile.php" class="option-btn">update</a>';
+               echo '<a href="update_profile.php" class="btn">update</a>';
             }
          ?>
       </div>
