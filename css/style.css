@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 
 :root{
-   --main-color:#2980b9;
+   /* --main-color:#2980b9; */
+   --main-color:#FF55BB;
+   --second: #FFD3A3;
+   --third: #FCFFB2;
+   --fourth: #B6EAFA;
+   --fifth: #FDF4F5;
    --orange:#f39c12;
    --red:#e74c3c;
    --black:#333;
